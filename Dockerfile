@@ -20,11 +20,11 @@ RUN poetry config virtualenvs.create false && poetry install --no-dev --no-inter
 # Copy the rest of the application
 COPY ./app /app
 
-FROM base as app
-
-WORKDIR /app
+# Set the PYTHONPATH environment variable
+ENV PYTHONPATH=/app
 
 # Expose the port
 EXPOSE 8000
 
-CMD ["poetry", "run", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Keep the container running for debugging
+CMD ["poetry", "run", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

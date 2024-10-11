@@ -8,11 +8,6 @@
 
 ### How to Run the Project Locally
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd fastapi-hexagonal-app
-```
 Build and run the application:
 
 ```bash

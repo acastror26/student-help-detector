@@ -16,6 +16,7 @@ dependency-injector = "^4.35.3"
 pydantic = "^1.8.2"
 elasticsearch = "^7.14.0"
 logstash-formatter = "^0.5.17"
+logstash = "^0.1.dev0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.4"
