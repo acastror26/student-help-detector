@@ -1,4 +1,4 @@
-from app.domain.models import StudentReport
+from app.data.entities.models import StudentReport
 
 class StudentReportRepository:
     def __init__(self, session):

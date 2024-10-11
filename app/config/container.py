@@ -1,9 +1,9 @@
 from dependency_injector import containers, providers
-from app.repositories.student_report_repository import StudentReportRepository
-from app.services.student_report_service import StudentReportService
+from app.data.repositories.student_report_repository import StudentReportRepository
+from app.core.student_report_service import StudentReportService
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from app.core.config import settings
+from app.config.settings import settings
 
 class Container(containers.DeclarativeContainer):
     wiring_config = containers.WiringConfiguration(modules=["app.api.endpoints"])

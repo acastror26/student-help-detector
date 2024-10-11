@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, File, UploadFile, HTTPException
-from app.services.student_report_service import StudentReportService
+from app.core.student_report_service import StudentReportService
 from dependency_injector.wiring import inject, Provide
-from app.core.container import Container
+from app.config.container import Container
 from fastapi.responses import StreamingResponse
 import io
 import csv

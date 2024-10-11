@@ -1,10 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.core.container import Container
+from app.config.container import Container
 from app.api import endpoints
 from sqlalchemy.orm import sessionmaker
-from app.domain.models import Base
-from app.core.config import settings
+from app.data.entities.models import Base
+from app.config.settings import settings
 from sqlalchemy import create_engine
 from dependency_injector.wiring import inject, Provide
 import logging
