@@ -1,4 +1,4 @@
-# FastAPI Hexagonal Architecture Application
+# Student help detector
 
 ### Prerequisites
 
